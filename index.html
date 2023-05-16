@@ -37,14 +37,19 @@
       <div class="wrapper first-screen__grid">
 
         <div class="first-screen__text">
-          <h1 class="title">Персональные тренировки c Алексеем Баевым</h1>
+          <h1 class="title">Персональные тренировки c&nbsp;Алексеем&nbsp;Баевым</h1>
           <p class="subtitle">Тренируйся рядом с домом!</p>
           <a href="#" class="button button--icon"><span>Запишитесь</span>
           <span class="decorate"></span></a>
         </div>
 
         <div class="first-screen__photo">
-          <img src="./img/photo.png" alt="Лысый тренер" width="812" loading="lazy">
+          
+          <picture>
+            <source srcset="./img/photo-425.png" media="(max-width: 425px)" width="373">
+            <source srcset="./img/photo.png">
+            <img src="./img/photo.png" alt="Лысый тренер" width="812" loading="lazy">
+          </picture>
         </div>
 
       </div>

@@ -129,7 +129,7 @@ input[type=radio].visually-hidden {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background: linear-gradient(136.08deg, rgba(230, 54, 74, 0.69) 0%, #EA384D 101.96%);
+  background: linear-gradient(136.08deg, rgba(230, 54, 74, 0.69) 0%, #ea384d 101.96%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   transition: width 0.6s, height 0.6s, color 0.3s, background-color 0.4s;
@@ -220,7 +220,7 @@ input[type=radio].visually-hidden {
   grid-template-columns: 1fr 1fr;
 }
 .first-screen__text {
-  background: radial-gradient(99.06% 115.29% at 0.94% 2.17%, rgba(255, 255, 255, 0.155) 0%, rgba(255, 255, 255, 0.035) 100%);
+  background: radial-gradient(99.06% 115.29% at 0.94% 2.17%, rgba(255, 255, 255, 0.155) 0%, rgba(78, 64, 64, 0.49) 100%);
   background-blend-mode: overlay, normal;
   box-shadow: 0px 4px 44px rgba(13, 13, 13, 0.2);
   backdrop-filter: blur(10px);
@@ -235,7 +235,58 @@ input[type=radio].visually-hidden {
 .first-screen .subtitle {
   margin-bottom: 31px;
 }
+.first-screen__photo img {
+  display: block;
+}
 
+@media (max-width: 1440px) {
+  .first-screen .title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 1250px) {
+  .first-screen .title {
+    font-size: 32px;
+  }
+  .first-screen .subtitle {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .first-screen__grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    position: relative;
+  }
+  .first-screen__photo {
+    order: -1;
+  }
+  .first-screen__text {
+    padding: 22px 32px 32px;
+    position: absolute;
+    max-width: 45%;
+    left: auto;
+    right: 40px;
+  }
+  .first-screen__photo img {
+    height: auto;
+    max-width: 60%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 900px) {
+  .first-screen__text {
+    position: initial;
+    max-width: 100%;
+    margin-top: -100px;
+  }
+  .first-screen__photo img {
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    max-height: 500px;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 650px) {
   .wrapper {
     max-width: 100%;
@@ -254,5 +305,20 @@ input[type=radio].visually-hidden {
   }
   .contacts__link span {
     display: none;
+  }
+}
+@media (max-width: 425px) {
+  .first-screen .title {
+    font-size: 28px;
+  }
+  .first-screen__text {
+    padding: 22px 20px;
+  }
+  .first-screen__text {
+    margin-top: -60px;
+  }
+  .first-screen .button--icon {
+    width: 100%;
+    max-width: 100%;
   }
 }
