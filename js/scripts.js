@@ -40,6 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
 });
 
 // техническая часть - УДАЛИТЬ НА ПРОДАКШЕНЕ!

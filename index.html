@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/normalize.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -92,24 +93,64 @@
         <ul class="services__list list-reset">
           <li class="services__item">
             <h3 class="title">Тренировки для взрослых</h3>
-            <p class="text">Персональная программа тренировки и индивидуальное внимание - один из эффективных способов улучшить Ваше здоровье и уровень физической подготовки.</p>
+            <p class="text">Персональная программа тренировки и индивидуальное внимание - один из эффективных способов
+              улучшить Ваше здоровье и уровень физической подготовки.</p>
             <div class="price"><span>От 800 руб в час</span><a href="#" class="button"><span>Запишитесь</span>
-              <span class="decorate"></span></a>
+                <span class="decorate"></span></a>
             </div>
           </li>
           <li class="services__item">
             <h3 class="title">Семейные "сплит" тренировки</h3>
-            <p class="text">Сплит-тренировка - это вид персонального тренинга, когда один тренер работает с двумя учениками одновременно. Подразумевает проработку конкретной группы мышц за одно занятие.</p>
+            <p class="text">Сплит-тренировка - это вид персонального тренинга, когда один тренер работает с двумя
+              учениками одновременно. Подразумевает проработку конкретной группы мышц за одно занятие.</p>
             <div class="price"><span>От 800 руб в час</span><a href="#" class="button"><span>Запишитесь</span>
-              <span class="decorate"></span></a>
+                <span class="decorate"></span></a>
             </div>
           </li>
         </ul>
       </div>
     </section>
+
+    <section class="coach section">
+      <div class="wrapper">
+        <h2 class="title">Тренер</h2>
+        <div class="coach__grid">
+          <div class="coach__slider">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/coach/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/coach/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/coach/3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/coach/4.jpg" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="coach__details">
+            <h2 class="title">Обо мне</h2>
+            <div class="coach__description">
+              <h3 class="name">Алексей Баев</h3>
+              <div class="text">
+                <h3>Обо мне</h3>
+                <p>Высшее педагогическое образование. Профессиональный спортсмен.<br>
+                  Основатель клуба "Перфоменс фитнес".</p>
+
+                <h3>Специализация</h3>
+                <p>Функциональный тренинг<br>
+                  cиловые и атлетические тренировки</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer"></footer>
-
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="./js/scripts.js"></script>
 </body>
