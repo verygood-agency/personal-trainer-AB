@@ -37,7 +37,7 @@
     <section class="first-screen">
       <div class="wrapper first-screen__grid">
 
-        <div class="first-screen__text">
+        <div class="first-screen__text blure">
           <h1 class="title">Персональные тренировки c&nbsp;Алексеем&nbsp;Баевым</h1>
           <p class="subtitle">Тренируйся рядом с домом!</p>
           <a href="#" class="button button--icon"><span>Запишитесь</span>
@@ -91,7 +91,7 @@
       <div class="wrapper">
         <h2 class="title">Услуги</h2>
         <ul class="services__list list-reset">
-          <li class="services__item">
+          <li class="services__item blure">
             <h3 class="title">Тренировки для взрослых</h3>
             <p class="text">Персональная программа тренировки и индивидуальное внимание - один из эффективных способов
               улучшить Ваше здоровье и уровень физической подготовки.</p>
@@ -99,7 +99,7 @@
                 <span class="decorate"></span></a>
             </div>
           </li>
-          <li class="services__item">
+          <li class="services__item blure">
             <h3 class="title">Семейные "сплит" тренировки</h3>
             <p class="text">Сплит-тренировка - это вид персонального тренинга, когда один тренер работает с двумя
               учениками одновременно. Подразумевает проработку конкретной группы мышц за одно занятие.</p>
@@ -111,7 +111,7 @@
       </div>
     </section>
 
-    <section class="coach section">
+    <section class="coach section section--right">
       <div class="wrapper">
         <h2 class="title">Тренер</h2>
         <div class="coach__grid">
@@ -119,16 +119,33 @@
             <!-- Swiper -->
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./img/coach/1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/coach/2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/coach/3.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/coach/4.jpg" alt=""></div>
+                <div class="swiper-slide">
+                  <a data-fslightbox="gallery" href="./img/coach/1.jpg">
+                    <img src="./img/coach/1.jpg" alt="фото тренера">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a data-fslightbox="gallery" href="./img/coach/2.jpg">
+                    <img src="./img/coach/2.jpg" alt="фото тренера">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a data-fslightbox="gallery" href="./img/coach/3.jpg">
+                    <img src="./img/coach/3.jpg" alt="фото тренера">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a data-fslightbox="gallery" href="./img/coach/4.jpg">
+                    <img src="./img/coach/4.jpg" alt="фото тренера">
+                  </a>
+                </div>
+                
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
 
-          <div class="coach__details">
+          <div class="coach__details blure">
             <h2 class="title">Обо мне</h2>
             <div class="coach__description">
               <h3 class="name">Алексей Баев</h3>
@@ -149,9 +166,9 @@
     </section>
   </main>
   <footer class="footer"></footer>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="./libs/swiper-bundle.min.js"></script>
+  <script src="./libs/fslightbox.js"></script>
   <script src="./js/scripts.js"></script>
 </body>
 

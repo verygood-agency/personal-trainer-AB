@@ -39,12 +39,37 @@ document.addEventListener('DOMContentLoaded', () => {
       decoration.style.height = '0';
     });
   });
-
+  // слайдер с фото тренера 
   var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
     },
   });
+
+
+  // Инициализация переменной с шириной окна
+  let viewportWidth = window.innerWidth;
+
+  // Выбор элемента на странице
+  let element = document.querySelector('.coach__slider .swiper');
+
+  // Установка ширины элемента, если ширина окна меньше 900px
+  if (viewportWidth < 900) {
+    element.style.width = `${viewportWidth}px`;
+  }
+
+  // Обработчик события resize, который будет обновлять значение переменной при изменении ширины окна
+  window.addEventListener('resize', function () {
+    viewportWidth = window.innerWidth;
+
+    // Обновление ширины элемента, если ширина окна меньше 900px
+    if (viewportWidth < 650) {
+      console.log(`Ширина вьюпорта обновлена: ${viewportWidth}px`);
+      element.style.width = `${viewportWidth}px`;
+    }
+  });
+
+
 
 });
 
