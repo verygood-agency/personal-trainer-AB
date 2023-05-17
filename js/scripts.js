@@ -40,10 +40,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   // слайдер с фото тренера 
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".coach__slider .swiper", {
     pagination: {
-      el: ".swiper-pagination",
+      el: ".coach__slider .swiper-pagination",
+      clickable: true,
     },
+    loop: true,
+  });
+
+  // слайдер с фото зала
+  var swiper2 = new Swiper(".place .swiper", {
+    slidesPerView: 3,
+    spaceBetween: 32,
+    centeredSlides: true,
+    // loop: true,
+    pagination: {
+      el: ".place .swiper-pagination",
+      clickable: true,
+    },
+    // scrollbar: {
+    //       el: '.place .swiper-scrollbar',
+    //     },
   });
 
 
