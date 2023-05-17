@@ -402,11 +402,17 @@ input[type="radio"].visually-hidden {
       width: 568px;
       height: 816px;
     }
-    img {
-      filter: grayscale(1);
-      transition: all 0.3s;
+  }
+  .swiper-slide img {
+    filter: grayscale(1);
+    transition: all 0.3s;
+    &:hover,
+    &:hover,
+    &:active {
+      filter: initial;
     }
   }
+
   &__details {
     z-index: 1;
     grid-column-start: 5;
@@ -446,6 +452,7 @@ input[type="radio"].visually-hidden {
       }
     }
   }
+
   &__description {
   }
 }

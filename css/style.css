@@ -374,9 +374,12 @@ input[type=radio].visually-hidden {
   width: 568px;
   height: 816px;
 }
-.coach__slider img {
+.coach .swiper-slide img {
   filter: grayscale(1);
   transition: all 0.3s;
+}
+.coach .swiper-slide img:hover, .coach .swiper-slide img:hover, .coach .swiper-slide img:active {
+  filter: initial;
 }
 .coach__details {
   z-index: 1;
