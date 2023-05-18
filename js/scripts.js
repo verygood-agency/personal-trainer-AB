@@ -103,6 +103,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  // простенький аккорденочик 
+// Находим все элементы с классом .faq__question
+var faqQuestions = document.querySelectorAll('.faq__question');
+
+// Если на странице есть такие элементы, собираем их в коллекцию и слушаем событие клика
+if (faqQuestions.length > 0) {
+    faqQuestions.forEach(function(question) {
+        // Добавляем слушателя события клика на каждый элемент
+        question.addEventListener('click', function() {
+            // Если у элемента уже есть класс .is-active, то удаляем его, иначе добавляем
+            this.classList.toggle('is-active');
+        });
+    });
+}
+
+
 
 });
 
