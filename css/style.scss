@@ -671,7 +671,65 @@ input[type="radio"].visually-hidden {
   }
 }
 
-// Адаптив
+.reviews {
+  overflow: hidden;
+  &__slider {
+    margin-bottom: 64px;
+  }
+
+  &__cite {
+    border-radius: 20px;
+    padding: 32px 24px;
+
+    margin: 0;
+
+    figcaption {
+      display: block;
+      font-weight: 600;
+      font-size: 22px;
+      color: #ffffff;
+    }
+    blockquote {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #ffffff;
+      opacity: 0.7;
+    }
+  }
+  .swiper {
+    overflow: initial !important;
+  }
+  .swiper .swiper-pagination {
+    bottom: -40px;
+  }
+  &__logo {
+    display: grid;
+    gap: 32px;
+    align-items: center;
+    grid-template-columns: repeat(3, 192px);
+    max-width: max-content;
+    margin: 0 auto;
+  }
+  &__logo-link {
+    display: flex;
+    border-radius: 20px;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+
+    img {
+      display: block;
+    }
+  }
+}
+
+main {
+  padding-bottom: 60px;
+}
+
+// Адаптивчик
 @media (max-width: 1440px) {
   .first-screen {
     .title {
@@ -701,6 +759,7 @@ input[type="radio"].visually-hidden {
     height: 110%;
   }
 }
+
 @media (max-width: 1250px) {
   .first-screen {
     .title {
@@ -798,6 +857,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
   }
 }
+
 @media (max-width: 1024px) {
   .services__item .title {
     font-size: 25px;
@@ -822,7 +882,15 @@ input[type="radio"].visually-hidden {
   .place .swiper .swiper-pagination {
     transform: translateX(-195px);
   }
+
+  .reviews__cite blockquote {
+    font-size: 16px;
+  }
+  .reviews__cite figcaption {
+    font-size: 18px;
+  }
 }
+
 @media (max-width: 900px) {
   .first-screen {
     padding-bottom: 55px;
@@ -937,7 +1005,10 @@ input[type="radio"].visually-hidden {
   .place__slider .swiper {
     transform: initial;
     height: 350px;
-    // width: 100vw;
+  }
+
+  .reviews__logo {
+    gap: 16px;
   }
 }
 
@@ -959,6 +1030,10 @@ input[type="radio"].visually-hidden {
       max-width: 28px;
       max-height: 28px;
     }
+  }
+  .reviews__logo {
+    grid-template-columns: 1fr;
+    max-width: 100%;
   }
 }
 

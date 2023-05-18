@@ -79,6 +79,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // слайдер с отзывами
+  var swiper3 = new Swiper(".reviews__slider .swiper", {
+    slidesPerView: 3,
+    spaceBetween: 32,
+    pagination: {
+      el: ".reviews__slider .swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1.15,
+        spaceBetween: 16,
+        // loop: true,
+        centeredSlides: false,
+      },
+      600: {
+        slidesPerView: 1.4,
+        spaceBetween: 16,
+        // loop: true,
+      },
+      769: {
+        slidesPerView: 2.2,
+        
+        
+      },
+      1400: {
+        slidesPerView: 3,
+      }
+    }
+  }); 
+
 
   // Инициализация переменной с шириной окна
   let viewportWidth = window.innerWidth;
