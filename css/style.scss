@@ -729,6 +729,45 @@ main {
   padding-bottom: 60px;
 }
 
+.footer {
+  background: rgba(80, 80, 80, 0.1);
+  padding: 60px 0 85px;
+  .logo {
+    align-self: flex-start;
+  }
+  &__grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  &__contacts {
+    text-align: right;
+    margin: 0;
+    font-size: 18px;
+    a {
+      display: block;
+      font-weight: 700;
+      font-size: 34px;
+    }
+  }
+  &__copyright {
+    text-align: right;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  &__developers {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    svg {
+      margin-right: 12px;
+    }
+  }
+}
+
 // Адаптивчик
 @media (max-width: 1440px) {
   .first-screen {
@@ -1010,6 +1049,10 @@ main {
   .reviews__logo {
     gap: 16px;
   }
+
+  .footer__contacts a {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1034,6 +1077,28 @@ main {
   .reviews__logo {
     grid-template-columns: 1fr;
     max-width: 100%;
+  }
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+  .footer__contacts {
+    text-align: center;
+    a {
+      font-size: 34px;
+    }
+  }
+  .footer__copyright {
+    text-align: center;
+  }
+  .footer .logo {
+    margin: 0 auto;
+  }
+  .footer__developers {
+    justify-content: center;
+  }
+
+  .footer {
+    padding: 40px 0 50px;
   }
 }
 
