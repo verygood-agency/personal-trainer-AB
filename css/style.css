@@ -563,10 +563,19 @@ input[type=radio].visually-hidden {
   object-fit: cover;
   overflow: hidden;
 }
+.place .swiper .swiper-pagination {
+  transform: translateX(-120px);
+}
 
 @media (max-width: 1440px) {
   .first-screen .title {
     font-size: 42px;
+  }
+  .place__slider .swiper {
+    transform: translateX(162px);
+  }
+  .place .swiper .swiper-pagination {
+    transform: translateX(-162px);
   }
 }
 @media (max-width: 1350px) {
@@ -658,6 +667,23 @@ input[type=radio].visually-hidden {
     left: 15%;
   }
 }
+@media (max-width: 1200px) {
+  .place__details {
+    padding: 45px 33px 38px;
+  }
+  .place__details .subtitle {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 34px;
+  }
+  .place__details .text {
+    font-size: 16px;
+  }
+  .place__details address {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
 @media (max-width: 1024px) {
   .services__item .title {
     font-size: 25px;
@@ -669,6 +695,16 @@ input[type=radio].visually-hidden {
   }
   .services__item .price {
     font-size: 20px;
+  }
+  .place__details {
+    grid-column-end: 7;
+  }
+  .place__slider .swiper {
+    transform: translateX(195px);
+    height: 500px;
+  }
+  .place .swiper .swiper-pagination {
+    transform: translateX(-195px);
   }
 }
 @media (max-width: 900px) {
@@ -735,6 +771,12 @@ input[type=radio].visually-hidden {
     left: initial;
     right: 15%;
   }
+  .place__slider .swiper {
+    transform: translateX(170px);
+  }
+  .place .swiper .swiper-pagination {
+    transform: initial;
+  }
 }
 @media (max-width: 768px) {
   .services__list {
@@ -752,6 +794,26 @@ input[type=radio].visually-hidden {
   }
   .contacts__link span {
     display: none;
+  }
+  .place__grid {
+    grid-template-columns: 1fr;
+  }
+  .place__details {
+    grid-column-end: initial;
+    grid-column-start: initial;
+    grid-row-start: initial;
+    grid-row-end: initial;
+  }
+  .place__slider {
+    grid-column-start: initial;
+    grid-column-end: initial;
+    grid-row-start: initial;
+    grid-row-end: initial;
+    overflow: hidden;
+  }
+  .place__slider .swiper {
+    transform: initial;
+    height: 350px;
   }
 }
 @media (max-width: 700px) {
@@ -798,6 +860,19 @@ input[type=radio].visually-hidden {
   }
   .coach__details .title:after {
     right: 6%;
+  }
+  .place__details {
+    padding: 36px 20px;
+  }
+  .place__details .subtitle {
+    margin-bottom: 20px;
+  }
+  .place__details address {
+    font-size: 18px;
+  }
+  .place__details .button {
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media (max-width: 600px) {

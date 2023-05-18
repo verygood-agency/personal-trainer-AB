@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
       el: ".coach__slider .swiper-pagination",
       clickable: true,
     },
-    loop: true,
   });
 
   // слайдер с фото зала
@@ -53,14 +52,37 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 3,
     spaceBetween: 32,
     centeredSlides: true,
-    // loop: true,
     pagination: {
       el: ".place .swiper-pagination",
       clickable: true,
     },
-    // scrollbar: {
-    //       el: '.place .swiper-scrollbar',
-    //     },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1.25,
+        spaceBetween: 16,
+        loop: true,
+        centeredSlides: false,
+      },
+      600: {
+        slidesPerView: 2.4,
+        spaceBetween: 16,
+        loop: true,
+      },
+      769: {
+        slidesPerView: 2.5,
+        
+        
+      },
+      // when window width is >= 480px
+      900: {
+        slidesPerView: 2.5,
+      },
+      // when window width is >= 640px
+      1400: {
+        slidesPerView: 3,
+      }
+    }
   });
 
 
