@@ -41,6 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   // слайдер с фото тренера 
   var swiper = new Swiper(".coach__slider .swiper", {
+    autoplay: {
+      delay: 4000,
+    },
     pagination: {
       el: ".coach__slider .swiper-pagination",
       clickable: true,
@@ -52,6 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 3,
     spaceBetween: 32,
     centeredSlides: true,
+    autoplay: {
+      delay: 5000,
+    },
     pagination: {
       el: ".place .swiper-pagination",
       clickable: true,
@@ -83,6 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
   var swiper3 = new Swiper(".reviews__slider .swiper", {
     slidesPerView: 3,
     spaceBetween: 32,
+    autoplay: {
+      delay: 3500,
+    },
     pagination: {
       el: ".reviews__slider .swiper-pagination",
       clickable: true,
